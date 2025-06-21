@@ -2,112 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Doe - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhruv Chhatbar | iOS Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    :root {
+      --accent: #6c63ff;
+      --primary: #715aff;
+      --secondary: #8f9eff;
+      --highlight: #ffce6e;
+      --gradient-top: #f7faff;
+      --gradient-mid: #e4ecff;
+      --gradient-bottom: #d2e3ff;
+      --text: #1a1a1a;
+      --card-radius: 14px;
+      --shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, var(--gradient-top), var(--gradient-mid), var(--gradient-bottom));
+      color: var(--text);
+      padding: 0 1.5rem;
+    }
+
     header {
-      background: #333;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .projects, .skills {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap-reverse;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #6c63ff, #715aff);
+      color: white;
+      gap: 2rem;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow);
+      position: relative;
     }
-    .project, .skill {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      flex: 1 1 45%;
+
+    
+
+    header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+    header div {
+      max-width: 600px;
     }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0066cc;
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
     }
-    footer {
+
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 2.5rem auto;
+      padding: 2.5rem;
+      border-radius: var(--card-radius);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      padding-left: 12px;
+      border-left: 5px solid var(--accent);
+      color: var(--secondary);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-item {
+      padding: 1.25rem;
+      border-radius: var(--card-radius);
+      background: linear-gradient(to bottom, #ffffff, #f1f5ff);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.education-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      padding: 0;
+    }
+
+    ul.education-list li {
+      list-style: none;
+      padding: 1.25rem;
+      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    ul.education-list li:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
       text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(to right, #ddeaff, #d3e2ff);
+      font-size: 1rem;
+      margin: 3rem auto 2rem;
+      max-width: 1200px;
+      border-top: 1px solid #ccc;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow);
+    }
+
+    .footer a {
+      color: inherit;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>John Doe</h1>
-    <p>iOS Developer | Swift | UIKit | SwiftUI</p>
+    <div>
+      <h1>Dhruv Chhatbar</h1>
+      <p>Senior iOS Developer · SwiftUI · Flutter · Product-Focused Engineer</p>
+    </div>
+    <img src="https://i.ibb.co/PzxfKXM/Designer-1.png" alt="Dhruv Chhatbar">
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an iOS Developer with 2.7 years of experience building clean and scalable apps using Swift, UIKit, and SwiftUI. Passionate about user-centered design and performance optimization.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">Swift / SwiftUI</div>
-      <div class="skill">UIKit & Auto Layout</div>
-      <div class="skill">Core Data & Combine</div>
-      <div class="skill">Firebase / CloudKit</div>
-      <div class="skill">MVVM / Clean Architecture</div>
-      <div class="skill">REST APIs / JSON</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>MyCo Lite</h3>
-        <p>Enterprise collaboration app built with Flutter, BLoC, Retrofit & local storage. Features emergency alerts, messaging, and knowledge sharing.</p>
-      </div>
-      <div class="project">
-        <h3>Fitness Tracker</h3>
-        <p>iOS health app using CoreMotion and HealthKit to monitor steps, calories, and sleep patterns. Integrated with Apple Watch.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="resume.pdf" target="_blank">📄 Download My Resume (PDF)</a></p>
-  </section>
-
-  <section id="contact">
+  <section>
     <h2>Contact</h2>
-    <div class="contact">
-      <a href="mailto:johndoe@example.com">Email</a>
-      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-      <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+    <div class="grid">
+      <div class="grid-item"><strong>Email:</strong><br> dhrvchhtbr@gmail.com</div>
+      <div class="grid-item"><strong>Phone:</strong><br> +91 8103533370</div>
+      <div class="grid-item"><strong>GitHub:</strong><br> github.com/dhruvchhatbar</div>
+      <div class="grid-item"><strong>LinkedIn:</strong><br> linkedin.com/in/dhruv-chhatbar-65227a1b2</div>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 John Doe
-  </footer>
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="grid-item">Swift / SwiftUI</div>
+      <div class="grid-item">UIKit / Auto Layout</div>
+      <div class="grid-item">Objective-C</div>
+      <div class="grid-item">Flutter / Dart</div>
+      <div class="grid-item">Core Data / SQLite</div>
+      <div class="grid-item">Firebase / RESTful APIs</div>
+      <div class="grid-item">MVVM / MVC / BLoC</div>
+      <div class="grid-item">Retrofit / Alamofire</div>
+    </div>
+  </section>
 
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <h3>OteRri</h3>
+        <p>NFC-powered laundry app with Google Maps, Firebase Messaging, and Apple guidelines compliance.</p>
+      </div>
+      <div class="grid-item">
+        <h3>HRMS & CRM</h3>
+        <p>Enterprise solution with Clean Architecture, messaging, sign-in integrations, and app store releases.</p>
+      </div>
+      <div class="grid-item">
+        <h3>MyCo Lite</h3>
+        <p>Flutter-based lightweight enterprise tool using BLoC, Retrofit, and Shared Preferences.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Memorize</h3>
+        <p>Interactive card flip game using SwiftUI, MVVM, gestures, and reusable UI components.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Flash Chat</h3>
+        <p>Firebase-authenticated chat app with ARKit filters, Core Data storage, and responsive layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="education-list">
+      <li><strong>Flutter Dev Course</strong><br> WsCube Tech (2025)</li>
+      <li><strong>CS193p iOS Dev</strong><br> Stanford (2024)</li>
+      <li><strong>iOS Bootcamp</strong><br> Angela Yu (2022)</li>
+      <li><strong>BCA</strong><br> MAIC, Raipur (2018–2021)</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    <p>© 2025 Dhruv Chhatbar · Designed with style & clean code. GitHub · LinkedIn</p>
+  </div>
 </body>
 </html>
