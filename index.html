@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .project, .skill {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 45%;
+    }
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0066cc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Doe</h1>
+    <p>iOS Developer | Swift | UIKit | SwiftUI</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m an iOS Developer with 2.7 years of experience building clean and scalable apps using Swift, UIKit, and SwiftUI. Passionate about user-centered design and performance optimization.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Swift / SwiftUI</div>
+      <div class="skill">UIKit & Auto Layout</div>
+      <div class="skill">Core Data & Combine</div>
+      <div class="skill">Firebase / CloudKit</div>
+      <div class="skill">MVVM / Clean Architecture</div>
+      <div class="skill">REST APIs / JSON</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>MyCo Lite</h3>
+        <p>Enterprise collaboration app built with Flutter, BLoC, Retrofit & local storage. Features emergency alerts, messaging, and knowledge sharing.</p>
+      </div>
+      <div class="project">
+        <h3>Fitness Tracker</h3>
+        <p>iOS health app using CoreMotion and HealthKit to monitor steps, calories, and sleep patterns. Integrated with Apple Watch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" target="_blank">📄 Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:johndoe@example.com">Email</a>
+      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+      <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 John Doe
+  </footer>
+
+</body>
+</html>
